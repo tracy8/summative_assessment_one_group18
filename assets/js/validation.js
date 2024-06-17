@@ -8,3 +8,14 @@ document.getElementById('full-name').addEventListener('input', function () {
         document.getElementById('full-name-error').textContent = '';
     }
 });
+
+// Author: @dmutoni
+document.getElementById('email').addEventListener('input', function () {
+    const email = this.value;
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!regex.test(email)) {
+        document.getElementById('email-error').textContent = 'Invalid email format.';
+    } else {
+        document.getElementById('email-error').textContent = '';
+    }
+});

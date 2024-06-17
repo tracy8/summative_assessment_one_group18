@@ -1,0 +1,164 @@
+/* Google Font */
+/* Author: @dmutoni */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+:root {
+    --Black: #000000;
+    --Dark: #262626;
+    --White: #ffffff;
+    --Gold: #FED700;
+    --Gray: gray;
+    --Gray2: #eeeeee;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+.container .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-height: 100vh;
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.container .wrapper .checkout-image,
+.container .wrapper .checkout-text {
+    width: 50%;
+    min-height: 100vh;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -- Checkout Image -- */
+
+.container .wrapper .checkout-image {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container .wrapper .checkout-image .info h2 {
+    color: var(--Dark);
+    font-style: italic;
+}
+
+.container .wrapper .checkout-image .info h4 {
+    color: var(--Gray);
+    font-weight: initial;
+    margin: 0;
+}
+
+.container .wrapper .checkout-image .info h1 {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.container .wrapper .checkout-image .info p {
+    color: var(--Gray);
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .wrapper .checkout-image .info p span {
+    margin-right: 5px;
+}
+
+.container .wrapper .checkout-image .footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .wrapper .checkout-image .footer p {
+    color: var(--Gray);
+    font-size: 15px;
+    font-weight: 300;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .wrapper .checkout-image .footer p span {
+    margin-right: 5px;
+}
+
+.container .wrapper .checkout-image .footer select {
+    padding: 5px 10px;
+    color: var(--Gray);
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.container .wrapper .checkout-image .footer select option {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+
+/* -- Checkout Text -- */
+
+
+.container .wrapper .checkout-text {
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: -40px 0px 50px 0px #fafafa;
+
+}
+
+.container .wrapper .checkout-text .back-to-home {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .wrapper .checkout-text .back-to-home a:first-child {
+    color: var(--Gray);
+}
+
+.container .wrapper .checkout-text .back-to-home a:last-child {
+    color: var(--Dark);
+    font-weight: 600;
+}
+
+.container .wrapper .checkout-text .back-to-home img {
+    margin: 0 5px;
+}
+
+.container .wrapper .checkout-text .pay-button {
+    width: 100%;
+}
