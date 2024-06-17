@@ -19,3 +19,14 @@ document.getElementById('expiring-date').addEventListener('input', function () {
         document.getElementById('expiring-date-error').textContent = '';
     }
 });
+
+// Author: @fniyonshuti
+document.getElementById('cvc').addEventListener('input', function () {
+    const cvc = this.value;
+    const regex = /^\d{3,4}$/;
+    if (!regex.test(cvc)) {
+        document.getElementById('cvc-error').textContent = 'CVC should be 3 or 4 digits.';
+    } else {
+        document.getElementById('cvc-error').textContent = '';
+    }
+});
