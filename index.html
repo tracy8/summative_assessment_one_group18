@@ -1,38 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Group 18 - Checkout Page (Variation 5)</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="wrapper">
-            <div class="checkout-image">
-                <div class="info">
-                    <h2>YoShop</h2>
-                    <h4>Mazda CX-9</h4>
-                    <h1>$583.98</h1>
-                    <p>
-                        <span>4-day rental</span>
-                        <img src="https://img.icons8.com/sf-regular/48/aaaaaa/forward.png" alt="Arrow" height="15px" width="15px" />
-                    </p>
-                    <img class="product-img" src="./assets/images/mazda-cx-9.png" height="200px" alt="Product-Image" />
-                </div>
-                <div class="footer">
-                    <p>
-                        <span>Powered by <b>Stripe</b></span>
-                        <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/000000/external-warning-ui-dreamstale-lineal-dreamstale.png" alt="Warning-icon" height="15px" width="15px" />
-                    </p>
-                    <select>
-                        <option selected>English</option>
-                        <option>French</option>
-                        <option>Arabic</option>
-                    </select>
-                </div>
+      <div class="wrapper">
+        <div class="checkout-image">
+          <div class="info">
+            <h2>YoShop</h2>
+            <h4>Mazda CX-9</h4>
+            <h1>$583.98</h1>
+            <p>
+              <span>4-day rental</span>
+              <img
+                src="https://img.icons8.com/sf-regular/48/aaaaaa/forward.png"
+                alt="Arrow"
+                height="15px"
+                width="15px"
+              />
+            </p>
+            <img
+              class="product-img"
+              src="./assets/images/mazda-cx-9.png"
+              height="200px"
+              alt="Product-Image"
+            />
+          </div>
+          <div class="footer">
+            <p>
+              <span>Powered by <b>Stripe</b></span>
+              <img
+                src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/000000/external-warning-ui-dreamstale-lineal-dreamstale.png"
+                alt="Warning-icon"
+                height="15px"
+                width="15px"
+              />
+            </p>
+            <select>
+              <option selected>English</option>
+              <option>French</option>
+              <option>Arabic</option>
+            </select>
+          </div>
+        </div>
+        <div class="checkout-text">
+          <div class="back-to-home">
+            <a href="">Back to YoShop</a>
+            <img
+              src="https://img.icons8.com/sf-regular/48/aaaaaa/forward.png"
+              alt="Arrow"
+              height="15px"
+              width="15px"
+            />
+            <a href="">Payment</a>
+          </div>
+
+          <div class="pay-button">
+            <button>
+              <img
+                src="https://img.icons8.com/ios-filled/50/FFFFFF/mac-os.png"
+                alt="Apple-Pay"
+                height="20px"
+                width="20px"
+              />
+              <span>Pay</span>
+            </button>
+          </div>
+
+          <div class="or-line">
+            <p>Or pay with card</p>
+          </div>
+
+          <div class="input-container">
+            <label>Full Name</label>
+            <input id="full-name" type="text" placeholder="John Doe" />
+            <div id="full-name-error" class="error"></div>
+          </div>
+
+          <div class="input-container">
+            <label>Email</label>
+            <input id="email" type="email" placeholder="johndoe@gmail.com" />
+            <div id="email-error" class="error"></div>
+          </div>
+
+          <div class="input-container">
+            <label>Shipping Address</label>
+            <input id="address" type="text" placeholder="Kigali, Rwanda" />
+            <div id="address-error" class="error"></div>
+          </div>
+
+          <div class="card-details">
+            <label>Card details</label>
+            <div class="card-number">
+              <input
+                id="card-number"
+                type="number"
+                placeholder="4242 4242 4242 4242"
+              />
+              <div>
+                <img
+                  src="https://img.icons8.com/color/48/000000/visa.png"
+                  height="20px"
+                  width="20px"
+                />
+                <img
+                  src="https://img.icons8.com/color/48/000000/mastercard.png"
+                  height="20px"
+                  width="20px"
+                />
+                <img
+                  src="https://img.icons8.com/color/48/000000/amex.png"
+                  height="20px"
+                  width="20px"
+                />
+              </div>
             </div>
-        </body>
-        </html>
-        
+            <div class="card-info">
+              <div class="mm-yy">
+                <input id="expiring-date" type="text" placeholder="MM / YY" />
+              </div>
+              <div class="cvc">
+                <input id="cvc" type="number" placeholder="CVC" />
+                <img
+                  src="https://img.icons8.com/ios/50/000000/card-verification-value.png"
+                  height="20px"
+                  width="20px"
+                />
+              </div>
+            </div>
+          </div>
+          <div id="card-number-error" class="error"></div>
+          <div id="expiring-date-error" class="error"></div>
+          <div id="cvc-error" class="error"></div>
+
+          <button class="buy-button">Pay $583.98</button>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/validation.js"></script>
+  </body>
+</html>
