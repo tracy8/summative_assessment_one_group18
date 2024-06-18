@@ -20,7 +20,7 @@ document.getElementById('email').addEventListener('input', function () {
     }
 });
 
-// Author: Tracy
+// Function to valudate the credit card number
 document.getElementById('card-number').addEventListener('input', function () {
     const cardNumber = this.value;
     const regex = /^\d{16}$/;
