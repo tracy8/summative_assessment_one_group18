@@ -9,7 +9,7 @@ document.getElementById('full-name').addEventListener('input', function () {
     }
 });
 
-// Author: @dmutoni
+// Function that validates email
 document.getElementById('email').addEventListener('input', function () {
     const email = this.value;
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -21,7 +21,6 @@ document.getElementById('email').addEventListener('input', function () {
 });
 
 // Function to Validate Shipping Address
-
 document.getElementById('address').addEventListener('input', function () {
     const address = this.value;
     const regex = /^[a-zA-Z0-9\s,.-]+$/;
@@ -43,7 +42,7 @@ document.getElementById('card-number').addEventListener('input', function () {
     }
 });
 
-// Author: @fniyonshuti
+// Function that validates expiring date
 document.getElementById('expiring-date').addEventListener('input', function () {
     const expiringDate = this.value;
     const regex = /^(0[1-9]|1[0-2])\/\d{2}$/;
@@ -54,7 +53,7 @@ document.getElementById('expiring-date').addEventListener('input', function () {
     }
 });
 
-// Author: @fniyonshuti
+// Function that validates cvc
 document.getElementById('cvc').addEventListener('input', function () {
     const cvc = this.value;
     const regex = /^\d{3,4}$/;
