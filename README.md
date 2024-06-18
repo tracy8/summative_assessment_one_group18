@@ -45,7 +45,7 @@ This project is a checkout page for a car rental case, featuring client-side val
 This project was developed by the members of Cohort2 Group18:
 
 1. [Patrick Niyogitare](https://github.com/patrickniyogitare28)
-2. [Best Verie Iradukunda](https://github.com/best-verie)
+2. [Best Verie Iradukunda](https://github.com/Best-Verie)
 3. [Tracy Confiance Murenzi](https://github.com/tracy20)
 4. [Denyse Uwingeneye Mutoni](https://github.com/dmutoni)
 5. [Fred Niyonshuti](https://github.com/fniyonshuti)
