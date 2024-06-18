@@ -20,6 +20,18 @@ document.getElementById('email').addEventListener('input', function () {
     }
 });
 
+// Author: @Best-Verie
+
+document.getElementById('address').addEventListener('input', function () {
+    const address = this.value;
+    const regex = /^[a-zA-Z0-9\s,.-]+$/;
+    if (!regex.test(address)) {
+        document.getElementById('address-error').textContent = 'Invalid address format.';
+    } else {
+        document.getElementById('address-error').textContent = '';
+    }
+});
+
 // Function to valudate the credit card number
 document.getElementById('card-number').addEventListener('input', function () {
     const cardNumber = this.value;
