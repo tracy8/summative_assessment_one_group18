@@ -1,4 +1,4 @@
-// Author:  @patrickniyogitare28
+// Function that validates the full name
 document.getElementById('full-name').addEventListener('input', function () {
     const fullName = this.value;
     const regex = /^[a-zA-Z\s]+$/;
