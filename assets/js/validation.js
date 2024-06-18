@@ -20,7 +20,7 @@ document.getElementById('email').addEventListener('input', function () {
     }
 });
 
-// Author: @Best-Verie
+// Function to Validate Shipping Address
 
 document.getElementById('address').addEventListener('input', function () {
     const address = this.value;
