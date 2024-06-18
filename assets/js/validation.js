@@ -26,6 +26,8 @@ document.getElementById('card-number').addEventListener('input', function () {
     const regex = /^\d{16}$/;
     if (!regex.test(cardNumber)) {
         document.getElementById('card-number-error').textContent = 'Invalid credit card number.';
+    } else {
+        document.getElementById('card-number-error').textContent = '';
     }
 });
 
