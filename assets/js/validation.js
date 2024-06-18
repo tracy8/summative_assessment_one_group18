@@ -20,6 +20,15 @@ document.getElementById('email').addEventListener('input', function () {
     }
 });
 
+// Author: Tracy
+document.getElementById('card-number').addEventListener('input', function () {
+    const cardNumber = this.value;
+    const regex = /^\d{16}$/;
+    if (!regex.test(cardNumber)) {
+        document.getElementById('card-number-error').textContent = 'Invalid credit card number.';
+    }
+});
+
 // Author: @fniyonshuti
 document.getElementById('expiring-date').addEventListener('input', function () {
     const expiringDate = this.value;
