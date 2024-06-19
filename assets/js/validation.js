@@ -74,4 +74,12 @@ document.getElementById('cvc').addEventListener('input', function () {
         document.getElementById('full-name-error').textContent = 'Full Name is required.';
         valid = false;
     }
+
+    // Check if email is empty
+    const email = document.getElementById('email').value;
+    if (email.trim() === '') {
+        document.getElementById('email-error').textContent = 'Email is required.';
+        valid = false;
+    }
+
 });
