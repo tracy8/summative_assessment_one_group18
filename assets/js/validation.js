@@ -63,3 +63,15 @@ document.getElementById('cvc').addEventListener('input', function () {
         document.getElementById('cvc-error').textContent = '';
     }
 });
+
+ // Function to validate empty fields on form submission
+ document.querySelector('.buy-button').addEventListener('click', function (e) {
+    let valid = true;
+
+    // Check if full name is empty
+    const fullName = document.getElementById('full-name').value;
+    if (fullName.trim() === '') {
+        document.getElementById('full-name-error').textContent = 'Full Name is required.';
+        valid = false;
+    }
+});
