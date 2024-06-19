@@ -88,4 +88,11 @@ document.getElementById('cvc').addEventListener('input', function () {
          document.getElementById('address-error').textContent = 'Address is required.';
          valid = false;
      }
+
+    // Check if card number is empty
+    const cardNumber = document.getElementById('card-number').value;
+    if (cardNumber.trim() === '') {
+        document.getElementById('card-number-error').textContent = 'Card Number is required.';
+        valid = false;
+    }
 });
