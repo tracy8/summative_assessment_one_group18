@@ -95,4 +95,22 @@ document.getElementById('cvc').addEventListener('input', function () {
         document.getElementById('card-number-error').textContent = 'Card Number is required.';
         valid = false;
     }
+
+    // Check if expiring date is empty
+    const expiringDate = document.getElementById('expiring-date').value;
+    if (expiringDate.trim() === '') {
+        document.getElementById('expiring-date-error').textContent = 'Expiring Date is required.';
+        valid = false;
+     }
+ 
+     // Check if CVC is empty
+    const cvc = document.getElementById('cvc').value;
+    if (cvc.trim() === '') {
+        document.getElementById('cvc-error').textContent = 'CVC is required.';
+        valid = false;
+     }
+ 
+    if (!valid) {
+        e.preventDefault(); // Prevent form submission if validation fails
+    }
 });
