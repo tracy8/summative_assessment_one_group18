@@ -82,4 +82,10 @@ document.getElementById('cvc').addEventListener('input', function () {
         valid = false;
     }
 
+     // Check if address is empty
+     const address = document.getElementById('address').value;
+     if (address.trim() === '') {
+         document.getElementById('address-error').textContent = 'Address is required.';
+         valid = false;
+     }
 });
